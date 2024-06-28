@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primaryColor: #657BAA;
+    --hoverButtonColor: #FFC456;
+    --secondayColor: #F4EEEB;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+button, input{
+    border:none;
+    outline: none;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.myApp{
+    width:40%;
+    padding: 10px;
+    background-color:var(--primaryColor) ;
+}
+
+.actions{
+    display: flex;
+    align-items: center;
+    gap:10px;
+
+}
+.addmessageButton{
+    width:20%;
+    padding: 14px 10px;
+    flex:1;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.addmessageButton:hover{
+    background-color: var(--hoverButtonColor);
+}
+
+input{
+    padding: 14px 10px;
+    width: 80%;
+    flex:4;
+
+}
+.mytable{
+    margin-top: 20px;
+    width: 100%;
+}
+tr td{
+    background-color: var(--secondayColor);
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.checker{
+    display: flex;
+    align-items: center;
+}
+.editBtn, .deliteBtn{
+    width: 80px;
+    cursor: pointer;
+    padding: 4px;
+    transition:0.3s;
+    border-radius:3px;
+    background-color: var(--primaryColor);
+    color: white;
+
+}
+
+.editBtn:hover, .deliteBtn:hover{
+    background-color: var(--hoverButtonColor);
+}
+
+.checkbox{
+    margin-right: 10px;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+}
